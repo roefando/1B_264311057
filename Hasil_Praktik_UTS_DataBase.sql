@@ -71,7 +71,7 @@ DELETE FROM krs
 WHERE id_krs = 'KRS03';
 
 
---SOAL NO 3
+-- SOAL NO 3
 SELECT 
     m.nim,
     m.nama,
