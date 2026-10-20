@@ -4,6 +4,11 @@ CREATE TABLE mahasiswa (
     nama VARCHAR(100) NOT NULL,
     semester INT(10) NOT NULL
  );
+
+CREATE TABLE dosen (
+     nidn INT(10) NOT NULL PRIMARY KEY,
+     nama_dosen VARCHAR(100) NOT NULL
+);
  
 CREATE TABLE matkul (
     kode_mk VARCHAR(100) NOT NULL PRIMARY KEY,
@@ -32,16 +37,23 @@ INSERT INTO mahasiswa (nim, nama, semester) VALUES
 ('264311048', 'M. A. Hafidz', 1),
 ('264311056', 'Restu Prayuga', 1);
 
+--insert Data ke dosen (3baris)
+INSERT INTO dosen (nidn, nama_dosen) VALUES 
+('00123456', 'Dr. Budi Santoso, M.Kom.'),
+('00654321', 'Siti Rahma, M.T.'),
+('00987654', 'Ahmad Fauzi, M.Cs.');
+
 -- Insert Data ke Mata Kuliah (3 baris)
 INSERT INTO matkul (kode_mk, nidn, nama_mk, sks) VALUES 
 ('IF101', '00123456', 'Pemrograman Basis Data', 3),
-('IF102', '00654321', 'Struktur Data & Algoritma', 4);
+('IF102', '00654321', 'Struktur Data & Algoritma', 4),
+('IF103', '00987654', 'Matematika Diskrit', 3);
 
 -- Insert Data ke Tabel Transaksi KRS (3 baris)
-INSERT INTO krs (id_krs, nim, kode_mk, semester_krs) VALUES 
-('KRS01', '264311043', 'IF101', '1'),
-('KRS02', '264311048', 'IF102', '1'),
-('KRS03', '264311056', 'IF103', '1');
+INSERT INTO krs (id_krs, nim, kode_mk, semester_krs, tahun_akademik) VALUES 
+('KRS01', '264311043', 'IF101', '1', '2026/2027'),
+('KRS02', '264311048', 'IF102', '1', '2026/2027'),
+('KRS03', '264311056', 'IF103', '1', '2026/2027');
 
 
 -- 2. [READ] Tampilkan seluruh isi salah satu Tabel Induk
