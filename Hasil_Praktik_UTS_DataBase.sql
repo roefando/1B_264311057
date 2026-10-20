@@ -7,8 +7,10 @@ CREATE TABLE mahasiswa (
  
 CREATE TABLE matkul (
     kode_mk VARCHAR(100) NOT NULL PRIMARY KEY,
+    nidn INT(10) NOT NULL,
     nama_mk VARCHAR(100) NOT NULL,
-    sks INT(10) NOT NULL
+    sks INT(10) NOT NULL,
+    FOREIGN KEY (nidn) REFERENCES dosen(nidn) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE krs (
@@ -31,10 +33,9 @@ INSERT INTO mahasiswa (nim, nama, semester) VALUES
 ('264311056', 'Restu Prayuga', 1);
 
 -- Insert Data ke Mata Kuliah (3 baris)
-INSERT INTO matkul (kode_mk, nama_mk, sks) VALUES 
-('IF101', 'Basis Data', 3),
-('IF102', 'Algoritma Pemrograman', 4),
-('IF103', 'Matematika Diskrit', 3);
+INSERT INTO matkul (kode_mk, nidn, nama_mk, sks) VALUES 
+('IF101', '00123456', 'Pemrograman Basis Data', 3),
+('IF102', '00654321', 'Struktur Data & Algoritma', 4);
 
 -- Insert Data ke Tabel Transaksi KRS (3 baris)
 INSERT INTO krs (id_krs, nim, kode_mk, semester_krs) VALUES 
