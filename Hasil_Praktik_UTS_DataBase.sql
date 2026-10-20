@@ -1,4 +1,4 @@
---SOAL NO 1
+-- SOAL NO 1
 CREATE TABLE mahasiswa (
     nim VARCHAR(100) NOT NULL PRIMARY KEY,
     nama VARCHAR(100) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE krs (
 );
 
 
---SOAL NO 2
+-- SOAL NO 2
 -- 1. [CREATE] INSERT minimal 3 baris data dummy ke masing-masing tabel (Total 9 baris)
 -- Insert Data ke Mahasiswa (3 baris)
 INSERT INTO mahasiswa (nim, nama, semester) VALUES 
@@ -37,7 +37,7 @@ INSERT INTO mahasiswa (nim, nama, semester) VALUES
 ('264311048', 'M. A. Hafidz', 1),
 ('264311056', 'Restu Prayuga', 1);
 
---insert Data ke dosen (3baris)
+-- insert Data ke dosen (3baris)
 INSERT INTO dosen (nidn, nama_dosen) VALUES 
 ('00123456', 'Dr. Budi Santoso, M.Kom.'),
 ('00654321', 'Siti Rahma, M.T.'),
