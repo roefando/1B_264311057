@@ -18,3 +18,20 @@ dalam mengelola alur pendaftaran sidang, penugasan dosen penguji, serta pencatat
 
    -ERD secara keseluruhan :
     ![ERD keseluruhan](assets/ERDkeseluruhan.png)
+
+3. Permodelan login dan normalisasi :
+
+   Transformasi data dari bentuk dokumen pendaftaran sidang manual ke dalam kaidah normalisasi basis data:
+   
+   1.	Unnormalized Form (UNF): Dokumen pendaftaran sidang mentah yang masih mencampurkan data mahasiswa, judul tugas akhir,        daftar seluruh dosen penguji, dan rincian nilai komponen dalam satu format lembar rekapitulasi yang memiliki nilai           berulang (multi-valued).
+      ![UNF](assets/UNF.png)
+
+   2. First Normal Form (1NF): Menghilangkan kelompok atribut berulang. Setiap baris data dibuat bernilai atomik (tunggal),        sehingga setiap penguji dan komponen nilainya berdiri di baris terpisah.
+      ![1NF](assets/1NF.png)
+   
+   3. Second Normal Form (2NF): Menghilangkan ketergantungan parsial (Partial Dependency) dengan memisahkan atribut                berdasarkan entitas utamanya, menghasilkan tabel terpisah untuk MAHASISWA, DOSEN, PENDAFTARAN_SIDANG, dan                    DOSEN_PENGUJI.
+      ![2NF](assets/2NF.png)
+
+   4.	Third Normal Form (3NF): Menghilangkan ketergantungan transitif (Transitive Dependency), memastikan seluruh atribut          non-kunci bergantung penuh secara langsung pada Primary Key masing-masing tabel tanpa perantara.
+      ![3NF](assets/3NF.png)
+
