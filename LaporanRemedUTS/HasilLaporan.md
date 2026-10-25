@@ -35,3 +35,7 @@ dalam mengelola alur pendaftaran sidang, penugasan dosen penguji, serta pencatat
    4.	Third Normal Form (3NF): Menghilangkan ketergantungan transitif (Transitive Dependency), memastikan seluruh atribut          non-kunci bergantung penuh secara langsung pada Primary Key masing-masing tabel tanpa perantara.
       ![3NF](assets/3NF.png)
 
+
+
+4. Permodelan fisik saya tulis di file terpisah
+
