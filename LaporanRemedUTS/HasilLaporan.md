@@ -1,4 +1,5 @@
 1.	Latar Belakang
+   
 Dalam proses pengembangan sistem informasi akademik (SIAKAD) yang andal, perancangan basis data memegang peranan krusial untuk memastikan integritas,
 efisiensi, dan konsistensi data tetap terjaga dengan baik. Namun, seiring dengan dinamika kebutuhan operasional kampus yang terus berkembang, sistem akademik
 konvensional sering kali menghadapi kendala fungsional—salah satunya adalah belum terintegrasinya pengelolaan dan rekapitulasi nilai ujian akhir mahasiswa secara
