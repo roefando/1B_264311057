@@ -12,5 +12,9 @@ melalui teknik normalisasi (1NF hingga 3NF), hingga pemodelan fisik menggunakan 
 dalam mengelola alur pendaftaran sidang, penugasan dosen penguji, serta pencatatan komponen nilai secara akurat dan terstandarisasi.
 
 2. Pemodlean Konseptual
+   
     -Pertambahan bisnis untuk menghasapi masalah :
      ![ERD Penambahan Modul Sidang](assets/ERDpenambahan.png)
+
+   -ERD secara keseluruhan :
+    ![ERD keseluruhan](assets/ERDkeseluruhan.png)
