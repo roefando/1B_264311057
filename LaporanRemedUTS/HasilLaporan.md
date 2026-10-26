@@ -17,7 +17,7 @@ dalam mengelola alur pendaftaran sidang, penugasan dosen penguji, serta pencatat
      ![ERD Penambahan Modul Sidang](assets/ERDpenambahan.png)
 
    -ERD secara keseluruhan :
-    ![ERD keseluruhan](assets/ERD-SIAKAD-keseluruhan.jpg)
+    ![ERD keseluruhan](assets/ERD-SIAKAD-keseluruhan(fix).jpg)
 
 3. Permodelan login dan normalisasi :
 
